@@ -20,7 +20,7 @@ env:
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-  API_GITHUB_PAT: ${{ secrets.API_GITHUB_PAT ))
+  API_GITHUB_PAT: ${{ secrets.API_GITHUB_PAT }}
 
 
 jobs:
