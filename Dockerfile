@@ -11,7 +11,7 @@ apt-get install -y r-cran-devtools openjdk-11-jdk r-cran-gdtools
 
 RUN R CMD javareconf
 
-RUN Rscript -e "c('rJava','SqlRender','DatabaseConnector','remotes')"
+RUN Rscript -e "install.packages(c('rJava','SqlRender','DatabaseConnector','remotes'))"
 RUN Rscript -e "remotes::install_github('OHDSI/DataQualityDashboard')"
 RUN Rscript -e "remotes::install_github('OHDSI/Achilles')"
 RUN Rscript -e "remotes::install_github('OHDSI/ROhdsiWebApi')"
